@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get '/cool' => 'authorization#cool'
   get '/sweet' => 'authorization#sweet'
 
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destory'
+
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 end

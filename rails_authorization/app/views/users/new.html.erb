@@ -9,3 +9,13 @@
 	<%= f.submit "Submit" %>
 
 <% end %>
+
+<h2> W0uld You Kind1y Login?</h2>
+
+<%= form_tag '/login' do %>
+
+	Email: <%= text_field_tag :email %>
+	Password: <%= password_field_tag :password %>
+	<%= submit_tag "Submit" %>
+
+<% end %>
